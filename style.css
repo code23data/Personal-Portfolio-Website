@@ -9,13 +9,11 @@ body {
     padding: 0;
     background-color: #faf0ca;
 
-    /* Flexbox magic starts here */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* 2. Make the main content expand */
 main {
     flex: 1;
 }
@@ -84,7 +82,6 @@ section {
 }
 
 #contact {
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     max-width: 500px;
     margin: 40px auto;
     padding: 20px;
@@ -93,8 +90,6 @@ section {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/*h1, h2 { text-align: center; color: #333; }
-h2 { font-size: 1rem; font-weight: normal; color: #666; margin-bottom: 25px; }*/
 
 .form-group { margin-bottom: 15px; }
 
@@ -105,7 +100,7 @@ input, textarea {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    box-sizing: border-box; 
     font-size: 14px;
 }
 
@@ -146,27 +141,25 @@ button:hover { background-color: #0056b3; }
     background-size: 100% 2px;
 }
 
-/* 1. Align items horizontally and remove bullet points */
 .social {
-    display: flex;       /* Places items side-by-side */
-    list-style: none;    /* Removes dots */
+    display: flex;       
+    list-style: none;    
     padding: 0;
-    gap: 30px;           /* Space between the icons */
-    align-items: center; /* Vertical alignment */
+    gap: 30px;           
+    align-items: center;
     justify-content: center;
 }
 
-/* 2. Control the size of the icons */
 .social svg {
-    width: 48px;         /* Set your desired width */
-    height: 48px;        /* Set your desired height */
-    fill: currentColor;  /* Optional: Allows you to change color via 'color' property */
-    display: block;      /* Removes extra whitespace at the bottom */
+    width: 48px;         
+    height: 48px;       
+    fill: currentColor;  
+    display: block;     
 }
 
-/* 3. Optional: Add a hover effect */
+
 .social a {
-    color: #333;         /* Icon color */
+    color: #333;         
     transition: color 0.3s ease;
 }
 
