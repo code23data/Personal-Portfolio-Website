@@ -1,0 +1,209 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 20px;
+}
+
+body {
+    font-family: Garamond, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf0ca;
+
+    /* Flexbox magic starts here */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 2. Make the main content expand */
+main {
+    flex: 1;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f4d35e;
+    display: flex;
+    justify-content: center; /* centers items horizontally */
+    align-items: center;     /* centers items vertically */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f4d35e;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ul.navbar li a:link, a:visited {
+    display: block;
+    color: #0D3B66;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+
+    background-color: #0D3B66;
+    color: white;
+}
+
+section {
+    margin: auto;
+    width: 80%;
+}
+
+.footer {
+    position: flow;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#contact {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgb(255, 250, 160);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/*h1, h2 { text-align: center; color: #333; }
+h2 { font-size: 1rem; font-weight: normal; color: #666; margin-bottom: 25px; }*/
+
+.form-group { margin-bottom: 15px; }
+
+label { display: block; margin-bottom: 5px; font-weight: 600; color: #444; }
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover { background-color: #0056b3; }
+
+.gradient-link {
+    font-weight: 600;
+    text-decoration: none;
+    background-image: linear-gradient(90deg, #6366f1, #ec4899);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    color: #1f2937;
+    padding-bottom: 3px;
+    transition: background-size 0.3s ease;
+}
+
+.gradient-link:hover {
+    background-size: 100% 2px;
+}
+
+/* 1. Align items horizontally and remove bullet points */
+.social {
+    display: flex;       /* Places items side-by-side */
+    list-style: none;    /* Removes dots */
+    padding: 0;
+    gap: 30px;           /* Space between the icons */
+    align-items: center; /* Vertical alignment */
+    justify-content: center;
+}
+
+/* 2. Control the size of the icons */
+.social svg {
+    width: 48px;         /* Set your desired width */
+    height: 48px;        /* Set your desired height */
+    fill: currentColor;  /* Optional: Allows you to change color via 'color' property */
+    display: block;      /* Removes extra whitespace at the bottom */
+}
+
+/* 3. Optional: Add a hover effect */
+.social a {
+    color: #333;         /* Icon color */
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #007bff;      /* Color when hovering */
+}
+
+.error-msg {
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: block;
+    min-height: 1em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.view-btn {
+    background-color: #2563eb;
+    color: white;
+}
+.download-btn {
+    background-color: #059669;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
