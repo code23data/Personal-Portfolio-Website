@@ -17,7 +17,6 @@ All files are located in the root directory for simplicity:
 * `index.html` — The main structure of the website (Home, About, Projects, Contact).
 * `style.css` — All custom styles, layout rules, and responsive media queries.
 * `script.js` — JavaScript logic for form validation and UI interactivity.
-* `profile.jpg` — Personal profile picture.
 * `resume.pdf` — The downloadable version of my professional resume.
 
 ## Built With
