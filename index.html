@@ -10,6 +10,8 @@
   <body>
     <header></header>
     <nav>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
       <ul class="navbar">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -28,7 +30,7 @@
     <section id="about">
       <article>
         <h1>About Me</h1>
-        <p> I am a recent graduate from IIT Madras (September 2026), with a Bachelor of Science (BS) degree in Data Science and Applications. I learnt a lot of programming skills and data science concepts in this degree. Before this, I also completed Bachelor of Engineering (BE) in Chemical Engineering from BITS Pilani.</p>
+        <p> I am a recent graduate from IIT Madras (September 2025), with a Bachelor of Science (BS) degree in Data Science and Applications. I learnt a lot of programming skills and data science concepts in this degree. Before this, I also completed Bachelor of Engineering (BE) in Chemical Engineering from BITS Pilani.</p>
         <p>
           I have a strong foundation in computer science that spans both data science and software engineering. My background includes linear algebra, probability and statistics, machine learning, and deep learning, along with core programming concepts such as data structures and algorithms, database systems, and full-stack web development.
         </p>
@@ -43,27 +45,49 @@
     <section id="projects">
       <article>
         <h1>My Projects</h1>
-        <h2>Ticket Show Booking Application</h2>
-        <h3>Project for Modern Application Development - I</h3>
-        <p><strong>Tech Stack:</strong> Flask, HTML, CSS, Bootstrap, SQLite</p>
-        <p>Developed a CRUD-based web app for booking tickets, featuring real-time seat tracking and efficient data handling using SQLite. Created intuitive user interfaces with Bootstrap and ensured a seamless booking experience. Applied MVC architecture for maintainable, modular code and scalable system design.</p>
-        <p><a href="https://github.com/code23data/TicketBooking" target="_blank" class="gradient-link">Project link</a></p>
-        <h2>Library Management System Application</h2>
-        <h3>Project for Modern Application Development - II</h3>
-        <p><strong>Tech Stack:</strong> Vue 3, Flask, Celery, Redis, SQLite</p>
-        <p>Developed a full-stack system with CRUD operations for books and sections, and user book issuing logic with limits and due-date enforcement. Integrated automated notifications (daily reading prompts, monthly reports) using Celery and Redis task queues. Implemented access control and rule-based logic for book lending, enhancing system usability and data consistency.</p>
-        <p><a href="https://github.com/code23data/App-Dev-2-Project" target="_blank" class="gradient-link">Project link</a></p>
-        <h2>Taxi Fare Prediction</h2>
-        <h3>Machine Learning Project</h3>
-        <p><strong>Tech Stack:</strong> Pandas, Sci-kit Learn, XGBoost, Seaborn.</p>
-        <p>Built and evaluated regression models to predict taxi fare amounts based on trip data. Applied data preprocessing, feature engineering, and model evaluation using Scikit-Learn.</p>
-        <p><a href="https://github.com/code23data/Taxi-Fare-Prediction" target="_blank" class="gradient-link">Project link</a></p>
-        <h2>Cost Expenditure Analysis – Local Supermarket</h2>
-        <h3>Capstone Project – Business Data Management</h3>
-        <p><strong>Tools Used:</strong> Microsoft Excel</p>
-        <p>Performed cost analysis on supermarket purchasing data to identify patterns and recommend optimization strategies. Created actionable visual reports for stakeholders to enhance operational decision-making.</p>
-      </article>
-    </section>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-info">
+              <h3>Ticket Show Booking Application</h3>
+              <p><strong>Tech Stack:</strong> Flask, HTML, CSS, Bootstrap, SQLite</p>
+              <p>Developed a CRUD-based web app for booking tickets, featuring real-time seat tracking and efficient data handling using SQLite. Created intuitive user interfaces with Bootstrap and ensured a seamless booking experience. Applied MVC architecture for maintainable, modular code and scalable system design.</p>
+              <div class="project-links">
+                <a href="https://github.com/code23data/TicketBooking" class="btn github-link" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-info">
+              <h3>Library Management System Application</h3>
+              <p><strong>Tech Stack:</strong> Vue 3, Flask, Celery, Redis, SQLite</p>
+              <p>Developed a full-stack system with CRUD operations for books and sections, and user book issuing logic with limits and due-date enforcement. Integrated automated notifications (daily reading prompts, monthly reports) using Celery and Redis task queues. Implemented access control and rule-based logic for book lending, enhancing system usability and data consistency.</p>
+              <div class="project-links">
+                <a href="https://github.com/code23data/App-Dev-2-Project" class="btn github-link" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-info">
+              <h3>Taxi Fare Prediction</h3>
+              <p><strong>Tech Stack:</strong> Pandas, Sci-kit Learn, XGBoost, Seaborn.</p>
+              <p>Built and evaluated regression models to predict taxi fare amounts based on trip data. Applied data preprocessing, feature engineering, and model evaluation using Scikit-Learn.</p>
+              <div class="project-links">
+                <a href="https://github.com/code23data/Taxi-Fare-Prediction" class="btn github-link" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-info">
+              <h3>Cost Expenditure Analysis – Local Supermarket</h3>
+              <p><strong>Tools Used:</strong> Microsoft Excel</p>
+              <p>Performed cost analysis on supermarket purchasing data to identify patterns and recommend optimization strategies. Created actionable visual reports for stakeholders to enhance operational decision-making.</p>
+            </div>
+          </article>
+
+          </div>
     <section id="contact">
       <article>
         <h1>Contact Me</h1>
